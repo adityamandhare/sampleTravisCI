@@ -9,9 +9,9 @@ env:
  
 script: python test_planet.py
 
-matrix:
- fast_finish: true
- allow_failures:
+jobs:
+ include:
   - python: 3.4
     env: PROD
- 
+  - python: 2.7
+    env: QA
