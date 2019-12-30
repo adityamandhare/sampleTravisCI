@@ -10,7 +10,7 @@ env:
 script: python test_planet.py
 
 matrix:
- include:
+ exclude:
  - python: 3.4
    env: PROD
  
