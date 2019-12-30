@@ -16,6 +16,9 @@ jobs:
     if: branch = release
     script: python test_planet.py 
     name: Unit Tests
+  - stage: scripting123
+    script: python test_planet.py 
+    name: Unit Tests 2
   - stage: deploy
     name: Deploy Scripts
     script: python test_planet.py
