@@ -8,3 +8,9 @@ env:
  - PROD
  
 script: python test_planet.py
+
+matrix:
+ include:
+ - python: 3.4
+   env: PROD
+ 
