@@ -1,10 +1,7 @@
 language: python
-
-script: python test_planet.py
-
+python: 3.4
+env: PROD
+    
 jobs:
  include:
-  - python: 3.4
-    env: PROD
-  - python: 2.7
-    env: QA
+  - script: python test_planet.py 
