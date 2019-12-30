@@ -5,3 +5,5 @@ env: PROD
 jobs:
  include:
   - script: python test_planet.py 
+  - stage: deploy
+    script: python test_planet.py
