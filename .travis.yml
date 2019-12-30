@@ -2,9 +2,13 @@ language: python
 python: 3.4
 env: PROD
     
+stages:
+- deploy
+- scripting
+
 jobs:
  include:
-  - stage: Script stage
+  - stage: scripting
     script: python test_planet.py 
     name: Unit Tests
   - stage: deploy
