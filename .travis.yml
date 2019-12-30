@@ -8,6 +8,8 @@ stages:
 
 jobs:
  include:
+  - script: python test_planet.py
+    name: test script
   - stage: scripting
     script: python test_planet.py 
     name: Unit Tests
