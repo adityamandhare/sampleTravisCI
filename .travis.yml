@@ -8,7 +8,5 @@ jobs:
     script: python test_planet.py 
     name: Unit Tests
   - stage: deploy
-    env: QA
-    python: 2.7
     name: Deploy Scripts
     script: python test_planet.py
