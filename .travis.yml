@@ -4,8 +4,9 @@ env: PROD
     
 stages:
 - test
-- deploy
 - scripting
+- name: deploy
+  if: branch = release
 
 jobs:
  include:
