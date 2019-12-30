@@ -2,9 +2,3 @@ language: python
 python:
  - 3.4
 script: python test_planet.py
-
-
-# whitelist
-branches: 
- except:
- - master
