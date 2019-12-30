@@ -5,5 +5,5 @@ script: python test_planet.py
 
 # whitelist
 branches: 
- only:
+ except:
  - master
