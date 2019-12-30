@@ -13,6 +13,7 @@ jobs:
   - script: python test_planet.py
     name: test script
   - stage: scripting
+    if: branch = release
     script: python test_planet.py 
     name: Unit Tests
   - stage: deploy
